@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Controller.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -46,32 +46,33 @@
         <ToggleButton
                 android:text="@string/beginner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/beginnerBtn" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
                 android:fontFamily="@font/montserrat" tools:text="BEGINNER" android:textOff="@string/beginner"
                 android:textOn="@string/beginner" android:layout_marginRight="16dp" android:checked="false"
                 style="@style/Widget.AppCompat.Button.Borderless" android:layout_marginEnd="16dp"
-                tools:targetApi="jelly_bean"/>
+                tools:targetApi="jelly_bean" android:onClick="onBeginnerClick"/>
         <ToggleButton
                 android:text="@string/baller"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/ballerBtn" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
                 android:fontFamily="@font/montserrat" android:textOff="@string/baller" android:textOn="@string/baller"
                 tools:text="BALLER" android:layout_marginLeft="16dp"
                 style="@style/Widget.AppCompat.Button.Borderless" android:layout_marginStart="16dp"
-                tools:targetApi="jelly_bean"/>
+                tools:targetApi="jelly_bean" android:onClick="onBallerBtn"/>
     </LinearLayout>
     <Button
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:id="@+id/finishBtn" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
             android:fontFamily="@font/montserrat"
             app:layout_constraintBottom_toBottomOf="@+id/background1"
             android:background="@drawable/swoosh_button" android:textColor="@android:color/white"
-            style="@style/Widget.AppCompat.Button.Borderless" tools:targetApi="jelly_bean"/>
+            style="@style/Widget.AppCompat.Button.Borderless" tools:targetApi="jelly_bean"
+            android:onClick="onFinishClick"/>
 
 </android.support.constraint.ConstraintLayout>
