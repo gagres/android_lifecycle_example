@@ -72,5 +72,5 @@
             android:fontFamily="@font/montserrat"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:textColor="@android:color/white"
-            android:background="@drawable/swoosh_button" tools:targetApi="jelly_bean"/>
+            android:background="@drawable/swoosh_button"/>
 </android.support.constraint.ConstraintLayout>
